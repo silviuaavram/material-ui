@@ -85,7 +85,11 @@
     }
   },
   "sideEffects": [
-    "**/*.css"
+    "**/*.css",
+    "./themes/*/index.js",
+    "./themes/*/index.mjs",
+    "./themes/*/*/index.js",
+    "./themes/*/*/index.mjs"
   ],
   "publishConfig": {
     "access": "public",
@@ -103,6 +107,7 @@
     "./zero-styled": "./src/zero-styled/index.tsx",
     "./className": "./src/className/index.ts",
     "./css/*": "./build/css/*",
+    "./themes/*": "./build/themes/*",
     "./ClickAwayListener": "./src/ClickAwayListener/index.ts",
     "./darkScrollbar": "./src/darkScrollbar/index.ts",
     "./DefaultPropsProvider": "./src/DefaultPropsProvider/index.ts",

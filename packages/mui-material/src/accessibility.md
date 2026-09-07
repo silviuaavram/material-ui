@@ -69,6 +69,7 @@ Components are rated in isolation against WCAG 2.2 A and AA. The levels are [cum
 | [AccordionSummary](./AccordionSummary/accessibility.md)   | 23          | 1                     | 0                   | 31                |
 | [Avatar](./Avatar/accessibility.md)                       | 9           | 2                     | 0                   | 44                |
 | [Button](./Button/accessibility.md)                       | 23          | 4                     | 0                   | 28                |
+| [Checkbox](./Checkbox/accessibility.md)                   | 23          | 2                     | 0                   | 30                |
 | [LinearProgress](./LinearProgress/accessibility.md)       | 8           | 3                     | 0                   | 44                |
 | [Radio](./Radio/accessibility.md)                         | 23          | 2                     | 0                   | 30                |
 | [RadioGroup](./RadioGroup/accessibility.md)               | 7           | 0                     | 0                   | 30                |

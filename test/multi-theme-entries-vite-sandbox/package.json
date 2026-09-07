@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "pnpm -F @mui/material build && vite build && node verify-build.mjs",
+    "build": "vite build && node verify-build.mjs",
+    "build:with-deps": "pnpm --workspace-root exec lerna run build --scope @mui-internal/multi-theme-entries-vite-sandbox",
     "preview": "vite preview"
   },
   "dependencies": {

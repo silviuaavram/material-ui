@@ -52,8 +52,12 @@ From the repository root:
 
 ```bash
 pnpm -F @mui-internal/multi-theme-vite-sandbox dev
-pnpm -F @mui-internal/multi-theme-vite-sandbox build
+pnpm -F @mui-internal/multi-theme-vite-sandbox build:with-deps
 ```
+
+`build:with-deps` uses Lerna/Nx to build dependencies first. `build` runs only Vite and the verifier
+against existing package output; the repository-wide `pnpm build` schedules dependencies itself.
+This avoids concurrent rebuilds of the shared Material UI output.
 
 The dev server exposes `/`, `/brutalist.html`, and `/consumer.html`. After building, open either
 `cdn*.html` file directly or serve the repository root as static files; those pages are deliberately
